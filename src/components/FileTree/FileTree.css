@@ -1,0 +1,63 @@
+.file-tree {
+  padding: 1.5rem;
+  max-width: 640px;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #333;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-sep {
+  color: #999;
+  margin: 0 0.25rem;
+}
+
+.tree-root {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tree-node {
+  margin: 0.25rem 0;
+}
+
+.tree-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tree-item.folder {
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.tree-item.folder:hover {
+  background: #f1f5f9;
+}
+
+.tree-item.file {
+  color: #64748b;
+  cursor: default;
+}
+
+.tree-item svg {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
