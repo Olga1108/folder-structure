@@ -4,21 +4,22 @@
 }
 
 .file-tree-message {
-  color: #64748b;
+  color: var(--color-text-muted);
   margin: 0;
 }
 
-.file-tree-error {
-  color: #dc2626;
-}
-
+.file-tree-error,
 .file-tree-not-found {
-  color: #dc2626;
+  color: var(--color-error);
   margin: 0.5rem 0;
 }
 
+.file-tree-message.file-tree-error {
+  margin: 0;
+}
+
 .file-tree-back-link {
-  color: #2563eb;
+  color: var(--color-primary);
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -30,11 +31,11 @@
 .breadcrumb {
   margin-bottom: 1rem;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-tertiary);
 }
 
 .breadcrumb a {
-  color: #333;
+  color: var(--color-text-secondary);
   text-decoration: none;
 }
 
@@ -43,7 +44,7 @@
 }
 
 .breadcrumb-sep {
-  color: #999;
+  color: var(--color-text-faint);
   margin: 0 0.25rem;
 }
 
@@ -68,16 +69,16 @@
 }
 
 .tree-item.folder {
-  color: #2563eb;
+  color: var(--color-primary);
   cursor: pointer;
 }
 
 .tree-item.folder:hover {
-  background: #f1f5f9;
+  background: var(--color-bg-hover);
 }
 
 .tree-item.file {
-  color: #64748b;
+  color: var(--color-text-muted);
   cursor: default;
 }
 

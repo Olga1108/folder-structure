@@ -1,3 +1,17 @@
+:root {
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-text-secondary: #333;
+  --color-text-tertiary: #666;
+  --color-text-faint: #999;
+  --color-bg: #fafafa;
+  --color-bg-surface: #fff;
+  --color-bg-hover: #f1f5f9;
+  --color-border: #e2e8f0;
+  --color-primary: #2563eb;
+  --color-error: #dc2626;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,8 +21,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: system-ui, -apple-system, sans-serif;
-  color: #1e293b;
-  background: #fafafa;
+  color: var(--color-text);
+  background: var(--color-bg);
 }
 
 #root {
