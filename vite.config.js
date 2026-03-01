@@ -24,4 +24,9 @@ function apiFileStructurePlugin() {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), apiFileStructurePlugin()],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./src/test/setup.js'],
+  },
 })
