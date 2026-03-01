@@ -1,0 +1,25 @@
+.not-found {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.not-found-title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.not-found-message {
+  margin: 0 0 1rem;
+  color: #64748b;
+}
+
+.not-found-link {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.not-found-link:hover {
+  text-decoration: underline;
+}

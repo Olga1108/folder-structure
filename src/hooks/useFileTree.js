@@ -12,18 +12,20 @@ export function useFileTree() {
       items: [],
       breadcrumb: [{ name: 'root', path: '' }],
       currentPath: pathSegments.join('/'),
+      notFound: false,
       loading,
       error
     };
   }
 
-  const { items, breadcrumb } = resolveViewData(data.root, pathSegments);
+  const { items, breadcrumb, notFound } = resolveViewData(data.root, pathSegments);
   const currentPath = pathSegments.join('/');
 
   return {
     items,
     breadcrumb,
     currentPath,
+    notFound: notFound ?? false,
     loading: false,
     error: null
   };

@@ -69,8 +69,9 @@ export function resolveViewData(root, pathSegments) {
 
   if (!targetChildren) {
     return {
-      items: childrenToItems(root),
-      breadcrumb: defaultBreadcrumb
+      items: [],
+      breadcrumb: buildBreadcrumb(pathSegments),
+      notFound: true
     };
   }
 

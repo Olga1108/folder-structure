@@ -12,6 +12,21 @@
   color: #dc2626;
 }
 
+.file-tree-not-found {
+  color: #dc2626;
+  margin: 0.5rem 0;
+}
+
+.file-tree-back-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.file-tree-back-link:hover {
+  text-decoration: underline;
+}
+
 .breadcrumb {
   margin-bottom: 1rem;
   font-size: 0.9rem;
