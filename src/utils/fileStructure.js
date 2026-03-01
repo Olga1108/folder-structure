@@ -1,10 +1,9 @@
 const ROOT_LABEL = 'root';
 
 /**
- * Returns the children object at the given path, or null if path is invalid.
- * @param {Object} root - Root node (object with folder/file entries)
- * @param {string[]} pathSegments - Array of path segments
- * @returns {Object|null} Children object or null
+ * @param {Object} root
+ * @param {string[]} pathSegments
+ * @returns {Object|null}
  */
 export function getChildrenByPath(root, pathSegments) {
   let current = root;
@@ -21,8 +20,7 @@ export function getChildrenByPath(root, pathSegments) {
 }
 
 /**
- * Converts path string to segments array.
- * @param {string} pathParam - Path string (e.g. "movies/Avengers")
+ * @param {string} pathParam
  * @returns {string[]}
  */
 export function pathToSegments(pathParam) {
@@ -31,7 +29,6 @@ export function pathToSegments(pathParam) {
 }
 
 /**
- * Builds breadcrumb items from path segments.
  * @param {string[]} pathSegments
  * @returns {{ name: string, path: string }[]}
  */
@@ -46,7 +43,6 @@ export function buildBreadcrumb(pathSegments) {
 }
 
 /**
- * Converts children object to items array.
  * @param {Object} children
  * @returns {{ name: string, node: Object }[]}
  */
@@ -55,7 +51,6 @@ export function childrenToItems(children) {
 }
 
 /**
- * Resolves items and breadcrumb for a given path.
  * @param {Object} root
  * @param {string[]} pathSegments
  * @returns {{ items: Array, breadcrumb: Array }}
