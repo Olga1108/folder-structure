@@ -1,5 +1,12 @@
 {
-  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/((?!api|assets).*)",
+      "destination": "/index.html"
+    }
+  ],
   "functions": {
     "api/fileStructure.js": {
       "includeFiles": "src/data/fileStructure.json"
