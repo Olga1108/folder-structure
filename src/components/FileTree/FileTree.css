@@ -1,0 +1,88 @@
+.file-tree {
+  padding: 1.5rem;
+  max-width: 640px;
+}
+
+.file-tree-message {
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.file-tree-error,
+.file-tree-not-found {
+  color: var(--color-error);
+  margin: 0.5rem 0;
+}
+
+.file-tree-message.file-tree-error {
+  margin: 0;
+}
+
+.file-tree-back-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.file-tree-back-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-text-tertiary);
+}
+
+.breadcrumb a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-sep {
+  color: var(--color-text-faint);
+  margin: 0 0.25rem;
+}
+
+.tree-root {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tree-node {
+  margin: 0.25rem 0;
+}
+
+.tree-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tree-item.folder {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.tree-item.folder:hover {
+  background: var(--color-bg-hover);
+}
+
+.tree-item.file {
+  color: var(--color-text-muted);
+  cursor: default;
+}
+
+.tree-item svg {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
