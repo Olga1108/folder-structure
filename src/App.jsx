@@ -13,7 +13,6 @@ export function AppRoutes() {
       <main>
         <Routes>
           <Route path="/" element={<Navigate to={BROWSE_BASE} replace />} />
-          <Route path="/browse" element={<FileTree />} />
           <Route path="/browse/*" element={<FileTree />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

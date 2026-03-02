@@ -7,7 +7,7 @@ export function useFileTree() {
   const { data, loading, error } = useFileStructure();
   const pathSegments = pathToSegments(pathParam);
 
-  if (loading || error || !data?.root) {
+  if (loading || error || !data) {
     return {
       items: [],
       breadcrumb: [{ name: 'root', path: '' }],
